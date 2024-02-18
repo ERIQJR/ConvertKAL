@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculatorlength.js" defer></script>
+    <title>Length Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Length Conversion Calculator</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="weight_conversion.html">Weight Conversion</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!-- Length Conversion -->
+        <label for="lengthFromUnit">From:</label>
+        <select id="lengthFromUnit">
+            <option value="inches">Inches</option>
+            <option value="centimeters">Centimeters</option>
+        </select>
+
+        <label for="lengthInputValue">Value:</label>
+        <input type="number" id="lengthInputValue">
+
+        <label for="lengthToUnit">To:</label>
+        <select id="lengthToUnit">
+            <option value="inches">Inches</option>
+            <option value="centimeters">Centimeters</option>
+        </select>
+
+        <button onclick="convertLength()">Convert</button>
+
+        <!-- Result Box -->
+        <div id="lengthResultBox">
+            <p id="lengthResult">Result: </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 IRFAN HAKIM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
